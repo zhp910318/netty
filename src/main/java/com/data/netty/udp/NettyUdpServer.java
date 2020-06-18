@@ -32,14 +32,6 @@ public class NettyUdpServer {
         }
     }
 
-    private static final class NettyUdpServerHolder {
-        static final NettyUdpServer INSTANCE = new NettyUdpServer();
-    }
-
-    public static NettyUdpServer getInstance() {
-        return NettyUdpServerHolder.INSTANCE;
-    }
-
     private NettyUdpServer() {
         group = new NioEventLoopGroup();
         bootstrap = new Bootstrap();

@@ -31,8 +31,8 @@ public class NettyApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         //启动TCP服务
-        InetSocketAddress tcpAddress = new InetSocketAddress(DefaultConstants.SOCKET_IP,DefaultConstants.TCP_SOCKET_PORT);
-        nettyTcpServer.start(tcpAddress);
+        //InetSocketAddress tcpAddress = new InetSocketAddress(DefaultConstants.SOCKET_IP,DefaultConstants.TCP_SOCKET_PORT);
+        //nettyTcpServer.start(tcpAddress);
         //启动udp服务
         InetSocketAddress udpAddress = new InetSocketAddress(DefaultConstants.SOCKET_IP, DefaultConstants.UDP_SOCKET_PORT);
         nettyUdpServer.start(udpAddress);
